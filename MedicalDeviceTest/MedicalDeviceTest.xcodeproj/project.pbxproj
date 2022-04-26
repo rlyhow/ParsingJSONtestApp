@@ -16,6 +16,7 @@
 		101CC8F528181FA20062CB8B /* MedicineDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101CC8F428181FA20062CB8B /* MedicineDevice.swift */; };
 		101CC8FB281824030062CB8B /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101CC8FA281824030062CB8B /* JsonParser.swift */; };
 		101CC8FD281824F80062CB8B /* deviceInfo in Resources */ = {isa = PBXBuildFile; fileRef = 101CC8FC281824F80062CB8B /* deviceInfo */; };
+		101CC90028183B570062CB8B /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101CC8FF28183B570062CB8B /* Array+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		101CC8F428181FA20062CB8B /* MedicineDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDevice.swift; sourceTree = "<group>"; };
 		101CC8FA281824030062CB8B /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		101CC8FC281824F80062CB8B /* deviceInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deviceInfo; sourceTree = "<group>"; };
+		101CC8FF28183B570062CB8B /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				101CC8F328181F930062CB8B /* Models */,
 				101CC8F8281820EE0062CB8B /* Views */,
 				101CC8F92818235F0062CB8B /* Services */,
+				101CC8FE28183B1A0062CB8B /* Extensions */,
 				101CC8F6281820BE0062CB8B /* Resources */,
 			);
 			path = MedicalDeviceTest;
@@ -106,6 +109,14 @@
 				101CC8FA281824030062CB8B /* JsonParser.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		101CC8FE28183B1A0062CB8B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				101CC8FF28183B570062CB8B /* Array+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				101CC8E428181F010062CB8B /* ViewController.swift in Sources */,
+				101CC90028183B570062CB8B /* Array+Extensions.swift in Sources */,
 				101CC8FB281824030062CB8B /* JsonParser.swift in Sources */,
 				101CC8F528181FA20062CB8B /* MedicineDevice.swift in Sources */,
 				101CC8E028181F010062CB8B /* AppDelegate.swift in Sources */,
