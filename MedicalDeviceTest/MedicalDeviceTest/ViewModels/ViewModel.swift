@@ -25,6 +25,7 @@ class ViewModel {
             return
         }
         medicineDeviceObject = jsonParserService.loadJson(filename: name)
+        print("SUCCESS LOAD FILE")
     }
     
     func getDataFrom(base64String stringFromFile: String?) {

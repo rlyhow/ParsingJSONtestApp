@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         
         viewModel.receivedData.bind { [unowned self] (newData) in
             receivedData = newData
-            print(newData)
+            print("GET \(newData)")
         }
     }
     
