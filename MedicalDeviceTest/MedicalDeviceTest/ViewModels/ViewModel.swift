@@ -19,7 +19,7 @@ class ViewModel {
         self.jsonParserService = jsonParserService
     }
     
-    func getDeviceInfo() {
+    func loadMedicineDeviceModel() {
         guard let name = fileName else {
             print("ERROR: CAN'T FIND FILE")
             return
@@ -29,7 +29,7 @@ class ViewModel {
     
     func getDataFrom(base64String stringFromFile: String?) {
         guard let base64String = stringFromFile else {
-            print("ERROR: CAN'T GET string from File")
+            print("ERROR: CAN'T GET STRING FROM MODEL")
             return
         }
         
@@ -39,6 +39,18 @@ class ViewModel {
         }
         
         receivedData.value = dataFromEncodedString
+    }
+    
+    func getArrayOfDoubles() {
+        
+        var arrayOfDoubles = [Double]()
+        let multiDimensionalArray = [UInt8](receivedData.value).chunked(into: MemoryLayout<Double>.stride)
+        
+        multiDimensionalArray.forEach({
+            arrayOfDoubles.append(binaryToType($0, Double.self))
+        })
+        
+        print(arrayOfDoubles)
     }
     
     func binaryToType <T> (_ value: [UInt8], _: T.Type) -> T

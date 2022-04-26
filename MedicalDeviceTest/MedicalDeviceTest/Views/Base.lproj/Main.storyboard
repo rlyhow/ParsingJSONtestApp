@@ -16,10 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgI-fB-e0W">
-                                <rect key="frame" x="143" y="97" width="129" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1E-Lx-LV3">
+                                <rect key="frame" x="90" y="269" width="234.5" height="150"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="a7w-NT-OiP"/>
+                                    <constraint firstAttribute="height" constant="150" id="ub0-Bx-UyG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Получить Data из base64 string">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="getDataFromEncodedString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dTm-Fn-zbE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgI-fB-e0W">
+                                <rect key="frame" x="107" y="94" width="200" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="XlM-Z2-5B7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="kbt-LK-H5a"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Загрузить файл">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -28,21 +46,49 @@
                                     <action selector="loadFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4u-5v-ITW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1E-Lx-LV3">
-                                <rect key="frame" x="143" y="292" width="129" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDb-Wo-VlT">
+                                <rect key="frame" x="87" y="439" width="240" height="150"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="bha-dt-qb6"/>
+                                    <constraint firstAttribute="height" constant="150" id="qAw-vu-Adh"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Получить числа">
+                                <buttonConfiguration key="configuration" style="plain" title="Вывести массив байт в консоль">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="getNumbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="093-cz-Wll"/>
+                                    <action selector="printArrayOfBytes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="epb-pz-gSv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5O-K4-ULY">
+                                <rect key="frame" x="70.5" y="609" width="273" height="150"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="bmo-YB-kku"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ghF-Cq-i0n"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Попытаться получить массив Double">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="printArrayOfDoubles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Uk-gf-7Dj"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zgI-fB-e0W" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BTt-Pb-Tfd"/>
+                            <constraint firstItem="V1E-Lx-LV3" firstAttribute="top" secondItem="zgI-fB-e0W" secondAttribute="bottom" constant="25" id="BbM-fF-XyV"/>
+                            <constraint firstItem="IDb-Wo-VlT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JR5-e1-JHV"/>
+                            <constraint firstItem="IDb-Wo-VlT" firstAttribute="top" secondItem="V1E-Lx-LV3" secondAttribute="bottom" constant="20" id="frU-kY-Qws"/>
+                            <constraint firstItem="e5O-K4-ULY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mai-aM-h48"/>
+                            <constraint firstItem="V1E-Lx-LV3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rcO-3U-mli"/>
+                            <constraint firstItem="e5O-K4-ULY" firstAttribute="top" secondItem="IDb-Wo-VlT" secondAttribute="bottom" constant="20" id="szx-Dd-FmY"/>
+                            <constraint firstItem="zgI-fB-e0W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="x3H-hO-4XW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -56,6 +102,12 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
