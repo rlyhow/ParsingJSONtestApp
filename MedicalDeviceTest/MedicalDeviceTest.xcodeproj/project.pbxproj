@@ -13,6 +13,7 @@
 		101CC8E728181F020062CB8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101CC8E528181F020062CB8B /* Main.storyboard */; };
 		101CC8E928181F030062CB8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101CC8E828181F030062CB8B /* Assets.xcassets */; };
 		101CC8EC28181F030062CB8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101CC8EA28181F030062CB8B /* LaunchScreen.storyboard */; };
+		101CC8F528181FA20062CB8B /* MedicineDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101CC8F428181FA20062CB8B /* MedicineDevice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		101CC8E828181F030062CB8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		101CC8EB28181F030062CB8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		101CC8ED28181F030062CB8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		101CC8F428181FA20062CB8B /* MedicineDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,38 @@
 			children = (
 				101CC8DF28181F010062CB8B /* AppDelegate.swift */,
 				101CC8E128181F010062CB8B /* SceneDelegate.swift */,
-				101CC8E328181F010062CB8B /* ViewController.swift */,
-				101CC8E528181F020062CB8B /* Main.storyboard */,
-				101CC8E828181F030062CB8B /* Assets.xcassets */,
-				101CC8EA28181F030062CB8B /* LaunchScreen.storyboard */,
-				101CC8ED28181F030062CB8B /* Info.plist */,
+				101CC8F328181F930062CB8B /* Models */,
+				101CC8F8281820EE0062CB8B /* Views */,
+				101CC8F6281820BE0062CB8B /* Resources */,
 			);
 			path = MedicalDeviceTest;
+			sourceTree = "<group>";
+		};
+		101CC8F328181F930062CB8B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				101CC8F428181FA20062CB8B /* MedicineDevice.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		101CC8F6281820BE0062CB8B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				101CC8E828181F030062CB8B /* Assets.xcassets */,
+				101CC8ED28181F030062CB8B /* Info.plist */,
+				101CC8EA28181F030062CB8B /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		101CC8F8281820EE0062CB8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				101CC8E528181F020062CB8B /* Main.storyboard */,
+				101CC8E328181F010062CB8B /* ViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				101CC8E428181F010062CB8B /* ViewController.swift in Sources */,
+				101CC8F528181FA20062CB8B /* MedicineDevice.swift in Sources */,
 				101CC8E028181F010062CB8B /* AppDelegate.swift in Sources */,
 				101CC8E228181F010062CB8B /* SceneDelegate.swift in Sources */,
 			);
@@ -291,7 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 992S4CF5Q6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MedicalDeviceTest/Info.plist;
+				INFOPLIST_FILE = MedicalDeviceTest/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +347,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 992S4CF5Q6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MedicalDeviceTest/Info.plist;
+				INFOPLIST_FILE = MedicalDeviceTest/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
